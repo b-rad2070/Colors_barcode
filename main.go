@@ -162,9 +162,9 @@ func generateBarcode(w http.ResponseWriter, r *http.Request) {
 		dc.SetColor(textColor)
 
 		// Load appropriate font from static fonts
-		fontFile := "arial.ttf" // Regular Arial
+		fontFile := "ARIAL.ttf" // Regular Arial
 		if b.Bold {
-			fontFile = "ariblk.ttf" // Arial Black
+			fontFile = "ARIBLK.ttf" // Arial Black
 		}
 
 		if err := loadFontFromStatic(dc, fontFile, float64(b.TextSize)); err != nil {
